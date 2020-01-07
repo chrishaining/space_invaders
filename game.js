@@ -136,9 +136,9 @@ function update() {
 
 const config = {
 	type: Phaser.AUTO,
-	width: 450,
+	width: 850,
 	height: 500,
-	backgroundColor: "b9eaff",
+	backgroundColor: "000000",
 	physics: {
 		default: 'arcade',
 		arcade: {
@@ -146,11 +146,7 @@ const config = {
 			enableBody: true,
 		}
 	},
-	scene: {
-		preload,
-		create,
-		update
-	}
+	scene: [StartScene, GameScene, EndScene]
 };
 
 
